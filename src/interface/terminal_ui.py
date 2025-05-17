@@ -321,8 +321,13 @@ class TerminalUI:
     
     def run(self) -> None:
         """Run the terminal UI."""
-        self.app = TerminalApp(message_callback=self._handle_message)
-        self.app.run()
+        print("Semantic OS CLI started. Type 'exit' to quit.")
+        while True:
+            user_input = input("You: ")
+            if user_input.strip().lower() == 'exit':
+                break
+            response = self._handle_message(user_input)
+            print("SemanticOS:", response)
     
     def stop(self) -> None:
         """Stop the terminal UI."""
