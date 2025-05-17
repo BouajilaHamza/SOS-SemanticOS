@@ -5,7 +5,7 @@ This component handles user input and prepares it for processing.
 It manages input history and provides input validation and preprocessing.
 """
 
-from typing import List, Dict, Any, Optional, Callable
+from typing import List, Dict, Tuple, Optional, Callable
 import re
 
 
