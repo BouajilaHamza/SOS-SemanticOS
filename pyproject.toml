@@ -1,0 +1,21 @@
+[project]
+name = "sos-semanticos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "rich>=14.0.0",
+    "textual>=3.2.0",
+    "torch>=2.7.0",
+    "transformers>=4.51.3",
+    "whoosh>=2.7.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "langchain>=0.3.25",
+    "markdown-it-py>=3.0.0",
+    "platformdirs>=4.3.8",
+    "pygments>=2.19.1",
+]
