@@ -1,0 +1,14 @@
+## Semantic OS - Requirements.txt
+
+# Core dependencies
+whoosh>=2.7.4
+transformers>=4.30.0
+torch>=2.0.0
+textual>=3.0.0
+rich>=13.0.0
+
+# Optional dependencies
+langchain>=0.0.200
+platformdirs>=3.0.0
+markdown-it-py>=2.1.0
+pygments>=2.13.0
