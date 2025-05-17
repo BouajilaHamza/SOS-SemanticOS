@@ -44,23 +44,24 @@ Semantic OS is a proof-of-concept system that enables natural language interacti
 
 2. Create and activate a virtual environment:
    ```bash
-   python -m venv venv
+   pip install uv
+   uv venv
    source venv/bin/activate
    ```
 
 3. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   uv sync --all-extras
    ```
 
 4. Download the language model:
    ```bash
-   python scripts/download_model.py
+   uv run python scripts/download_model.py
    ```
 
 5. Run Semantic OS:
    ```bash
-   python main.py
+   uv run python main.py
    ```
 
 ## Usage
@@ -144,7 +145,7 @@ semantic-os/
 │   ├── integration_test.py
 │   └── validation_tests.py
 ├── main.py                # Main entry point
-├── requirements.txt       # Project dependencies
+├── pyproject.toml       # Project dependencies
 └── README.md              # This file
 ```
 
